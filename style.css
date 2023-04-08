@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 0.99em;
+  color: #4d4e53;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+/* NavBar */
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  overflow-y: scroll;
+}
+
+/* Page Header */
+#navbar header {
+  padding: 20px;
+}
+
+/* Nav Access Menu (Mobile) */
+#menu i {
+  color: black;
+  font-size: 1.4rem;
+}
+
+#menu {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+  border: none;
+}
+
+/* Nav Links */
+#navbar ul {
+  width: 100%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar ul li {
+  list-style: none;
+  width: 100%;
+  position: relative;
+  border-top: 1px solid;
+}
+
+#navbar ul li a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+
+/* Documentation */
+#main-doc {
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+  text-align: justify;
+}
+
+/* Documentation Headings*/
+header {
+  text-align: left;
+  color: black;
+  font-size: 1.8em;
+}
+
+/* Documentation Code Snippets*/
+code {
+  display: block;
+  text-align: left;
+  background-color: #f7f7f7;
+  white-space: pre-line;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: monospace;
+  line-height: 2;
+  margin: 15px auto;
+}
+
+/* Reference Link */
+#mdn {
+  color: blue;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  top: 100px;
+}
+
+#name {
+  color: black;
+  font-size: 20px;
+}
+
+@media (max-width: 815px) {
+  #navbar ul {
+    height: 207px;
+    border: 1px solid;
+    display: none;
+  }
+
+  #navbar {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+    overflow: hidden;
+  }
+
+  #main-doc {
+    margin-left: 0px;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  #header {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin: 0 auto;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
